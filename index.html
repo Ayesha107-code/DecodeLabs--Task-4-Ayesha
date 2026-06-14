@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Validation Form</h1>
+
+      <form id="form" class="form" aria-label="User validation form">
+        <!-- NAME -->
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          aria-required="true"
+          aria-describedby="nameError"
+        />
+        <small class="error" id="nameError" aria-live="polite"></small>
+
+        <!-- EMAIL -->
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          aria-required="true"
+          aria-describedby="emailError"
+        />
+        <small class="error" id="emailError" aria-live="polite"></small>
+
+        <!-- PASSWORD -->
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          aria-required="true"
+          aria-describedby="passwordError"
+        />
+        <small class="error" id="passwordError" aria-live="polite"></small>
+
+        <!-- CONFIRM PASSWORD -->
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          aria-required="true"
+          aria-describedby="confirmPasswordError"
+        />
+        <small
+          class="error"
+          id="confirmPasswordError"
+          aria-live="polite"
+        ></small>
+
+        <!-- PHONE -->
+        <label for="phone">Phone Number</label>
+        <input
+          type="text"
+          id="phone"
+          aria-required="true"
+          aria-describedby="phoneError"
+        />
+        <small class="error" id="phoneError" aria-live="polite"></small>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="successMessage" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
